@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# Freelando‑App 🧰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Layout de front‑end em React para formulário de cadastro. Este README foi escrito como um único arquivo Markdown contínuo (sem blocos com ```), seguindo as preferências e boas práticas solicitadas.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Visão Geral
 
-### `npm start`
+O projeto **Freelando‑App** é um layout de formulário criado com React, pensado como base visual para sistemas que precisem de cadastro de usuários/serviços. O foco está na experiência do usuário, responsividade e facilidade de integração.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias
 
-### `npm test`
+* React (Create React App)
+* JavaScript (ES6+)
+* HTML5 / CSS3
+* Ferramentas de desenvolvimento: npm, ESLint (configurações recomendadas)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Formulário de cadastro com campos controlados e validações básicas
+* Componentização para reuso
+* Responsividade para dispositivos móveis e desktop
+* Considerações de acessibilidade (labels, navegação por teclado, foco)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Preview
 
-### `npm run eject`
+Adicione uma imagem `preview.png` na raiz do repositório para mostrar uma pré‑visualização aqui. Exemplo de referência no README: `![Preview do formulário](./preview.png)`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instalação & Execução
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+# Clone o repositório
+git clone https://github.com/Andre-StudioNerd/Freelando-App.git
+cd Freelando-App
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Instale as dependências
+npm install
 
-## Learn More
+# Em desenvolvimento
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Testes (se existirem)
+npm test
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Build para produção
+npm run build
 
-### Code Splitting
+# Nota: `npm run eject` é irreversível (apenas se realmente precisar)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Scripts importantes (package.json)
 
-### Analyzing the Bundle Size
+```
+# Executa o app em modo desenvolvimento
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Cria bundle otimizado para produção
+npm run build
 
-### Making a Progressive Web App
+# Executa testes
+npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Caso deseje: eject (irreversível)
+npm run eject
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Boas práticas / Acessibilidade
 
-### Deployment
+* Use elementos semânticos: `label`, `fieldset`, `button`, `input` e roles ARIA quando necessário.
+* Evite usar `<a>` sem `href`. Se o elemento apenas dispara uma ação, use `<button>` e estilize para parecer link quando preciso.
+* Ao abrir links externos com `target="_blank"`, sempre adicione `rel="noopener noreferrer"` para evitar vulnerabilidades com `window.opener`.
+* Valide campos no frontend e, idealmente, no backend.
+* Garanta contraste suficiente e foco visível para navegação por teclado.
+* Configure ESLint e as regras de `jsx-a11y` para detectar problemas de acessibilidade durante o desenvolvimento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Configuração de ambiente
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se o projeto exigir variáveis de ambiente, documente aqui as chaves necessárias. Exemplo (arquivo `.env`):
+
+```
+REACT_APP_API_URL=https://api.exemplo.com
+```
+
+Inclua instruções para não commitar arquivos sensíveis e adicione `.env` ao `.gitignore`.
+
+---
+
+## Contribuição
+
+1. Faça um fork do repositório.
+2. Crie uma branch com a feature ou correção: `git checkout -b feature/descritivo`.
+3. Faça commits claros e pequenos: `git commit -m "feat: descrição curta"`.
+4. Envie para seu fork: `git push origin feature/descritivo`.
+5. Abra um Pull Request explicando o que foi alterado.
+
+Siga o padrão de commits e mantenha o código limpo e testado.
+
+---
+
+## Licença
+
+Este projeto pode usar a licença MIT. Se desejar outro tipo, atualize o arquivo `LICENSE` na raiz.
+
+---
+
+## Autor / Contato
+
+Andre‑StudioNerd — [https://github.com/Andre-StudioNerd](https://github.com/Andre-StudioNerd)
