@@ -1,6 +1,6 @@
 # Freelando‑App 🧰
 
-Layout de front‑end em React para formulário de cadastro. Este README foi escrito como um único arquivo Markdown contínuo (sem blocos com ```), seguindo as preferências e boas práticas solicitadas.
+Layout de front‑end em React para formulário de cadastro.
 
 ---
 
