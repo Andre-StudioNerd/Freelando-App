@@ -28,12 +28,6 @@ O projeto **Freelando‑App** é um layout de formulário criado com React, pens
 
 ---
 
-## Preview
-
-Adicione uma imagem `preview.png` na raiz do repositório para mostrar uma pré‑visualização aqui. Exemplo de referência no README: `![Preview do formulário](./preview.png)`
-
----
-
 ## Instalação & Execução
 
 ```
